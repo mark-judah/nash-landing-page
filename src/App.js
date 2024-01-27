@@ -16,7 +16,7 @@ import FooterMobile from "./components/FooterMobile";
 
 function App() {
   return (
-    <div>
+    <div className="bg-[#d7e7ef] dark:bg-[#314255]">
 
       <div className="hidden xl:block">
         <Navbar />
