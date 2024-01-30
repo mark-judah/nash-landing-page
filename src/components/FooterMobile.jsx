@@ -1,11 +1,9 @@
 import React from "react";
-import Apple from '../assets/apple.svg'
-import Android from '../assets/android.svg'
-import Copyright from '../assets/copyright.svg'
+import CopyrightLight from '../assets/copyright_light.svg'
+import CopyrightDark from '../assets/copyrigh_dark.svg'
 import Fb from '../assets/facebook.svg'
 import Insta from '../assets/instagram.svg'
 import Linkedin from '../assets/linkedin.svg'
-import X from '../assets/x.svg'
 
 const FooterMobile = () => {
     const currentYear = new Date().getFullYear();
@@ -44,7 +42,7 @@ const FooterMobile = () => {
             </div>
 
             <div>
-            <hr className="bg-white dark:bg-[#0E2954] h-0.5"></hr>
+                <hr className="bg-white dark:bg-[#0E2954] h-0.5"></hr>
             </div>
 
             <div className=" p-5 text-sm">
@@ -53,7 +51,17 @@ const FooterMobile = () => {
                         <img src={Fb} className="w-8" />
                         <img src={Insta} className="w-8" />
                         <img src={Linkedin} className="w-8" />
-                        <img src={X} className="w-8" />
+                        <div className="dark:hidden">
+                            <svg width="50" height="50" className="w-8" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M37.9271 4.6875H44.8187L29.7625 21.8958L47.475 45.3125H33.6042L22.7417 31.1104L10.3125 45.3125H3.41667L19.5208 26.9062L2.53125 4.6875H16.75L26.5687 17.6687L37.9229 4.6875H37.9271ZM35.5083 41.1875H39.3271L14.6771 8.59583H10.5792L35.5083 41.1875Z" fill="white" />
+                            </svg>
+                        </div>
+
+                        <div className="hidden dark:block">
+                        <svg width="50" height="50" className="w-8" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M37.9271 4.6875H44.8187L29.7625 21.8958L47.475 45.3125H33.6042L22.7417 31.1104L10.3125 45.3125H3.41667L19.5208 26.9062L2.53125 4.6875H16.75L26.5687 17.6687L37.9229 4.6875H37.9271ZM35.5083 41.1875H39.3271L14.6771 8.59583H10.5792L35.5083 41.1875Z" fill="black" />
+                            </svg>
+                        </div>
 
                     </div>
                 </div>
@@ -61,8 +69,9 @@ const FooterMobile = () => {
 
             <div className="flex flex-col space-y-3 p-2">
                 <div className="flex items-center">
-                    <img src={Copyright} className="w-5"></img>
-                    <p className="text-sm"> <span className="px-2">{currentYear}</span> Nash. All Rights Reserved</p>
+                    <img src={CopyrightLight} className="w-5 dark-hidden"></img>
+                    <img src={CopyrightDark} className="w-5 hidden dark:block"></img>
+                    <p> <span className="dark:pl-0 dark:pr-2 px-2">{currentYear}</span>Nash. All Rights Reserved</p>
                 </div>
 
             </div>

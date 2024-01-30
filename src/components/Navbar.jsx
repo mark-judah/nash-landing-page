@@ -2,6 +2,7 @@ import React from "react";
 import Logo from '../assets/Logo.svg'
 import { useEffect, useState } from 'react';
 
+
 const Navbar = () => {
     const [theme, setTheme] = useState(localStorage.theme);
     const [ischecked,setchecked]=useState(false)
@@ -14,6 +15,8 @@ const Navbar = () => {
     
         // save theme to local storage
         localStorage.setItem('theme', theme);
+        window.dispatchEvent(new Event('storage'))
+
         if(theme==='dark'){
             setchecked(true)
         }
@@ -21,6 +24,7 @@ const Navbar = () => {
 
 
       const toggleDarkMode = () => {
+
         console.log(ischecked)
         setTheme(colorTheme);
         if(ischecked){
