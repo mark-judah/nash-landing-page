@@ -9,14 +9,14 @@ const FooterMobile = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <div className="bg-[#0E2954] dark:bg-white text-white dark:text-[#0E2954] mt-5">
+        <div id="contact-us" className="bg-[#0E2954] dark:bg-white text-white dark:text-[#0E2954] mt-5">
             <div className="flex justify-between items-center p-5">
                 <div>
-                    <ul className="text-sm space-y-3">
-                        <li>Nash</li>
-                        <li>About Us</li>
-                        <li>Services</li>
-                        <li>Contact Us</li>
+                    <ul className="text-sm space-y-6">
+                    <a href="#"><li>Nash</li></a>
+                    <a href="#about-us"> <li>About Us</li></a>
+                    <a href="#services"> <li>Services</li></a>
+                    <a href="#contact-us"> <li>Contact Us</li></a>
                     </ul>
                 </div>
 

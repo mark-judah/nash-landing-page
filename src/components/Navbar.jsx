@@ -9,7 +9,7 @@ const Navbar = () => {
     const colorTheme = theme === 'dark' ? 'light' : 'dark';
 
     useEffect(() => {
-        
+
         const root = window.document.documentElement;
         root.classList.remove(colorTheme);
         root.classList.add(theme);
@@ -42,10 +42,10 @@ const Navbar = () => {
                 <span className="text-4xl font-bold text-[#0E2954] ml-3 dark:text-white">Nash</span>
 
                 <ul className="flex items-center text-[#0E2954] dark:text-white space-x-12 text-2xl ml-36">
-                    <li>About Us</li>
-                    <li>Services</li>
-                    <li>Contact Us</li>
-                    <li>Resources</li>
+                    <a href="#about-us"> <li>About Us</li> </a>
+                    <a href="#services"> <li>Services</li></a>
+                    <a href="#contact-us">  <li>Contact Us</li></a>
+                    <a href="#about-us"> <li>Resources</li></a>
 
                 </ul>
 

@@ -11,6 +11,7 @@ const NavbarMobile = () => {
 
     const colorTheme = theme === 'dark' ? 'light' : 'dark';
 
+    
     useEffect(() => {
         const root = window.document.documentElement;
         root.classList.remove(colorTheme);
@@ -66,30 +67,24 @@ const NavbarMobile = () => {
 
                 <div className="flex">
                     <div class={`${drawer ? "w-64 fixed top-20  z-40 h-fit p-4 overflow-y-auto transition-transform -translate-x-full bg-white  dark:bg-gray-800" : "hidden"} `}>
-                        <a href="#" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
-                            <span class="text-2xl"><i class="bx bx-home"></i></span>
-                            <span>Dashboard</span>
+                        <a href="#about-us" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-[#51C1F9]">
+                            <span>About Us</span>
                         </a>
 
-                        <a href="#" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
-                            <span class="text-2xl"><i class="bx bx-cart"></i></span>
-                            <span>Cart</span>
+                        <a href="#services" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-[#51C1F9]">
+                            <span>Services</span>
                         </a>
 
-                        <a href="#" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
-                            <span class="text-2xl"><i class="bx bx-shopping-bag"></i></span>
-                            <span>Shopping</span>
+                        <a href="#contact-us" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-[#51C1F9]">
+                            <span>Contact us</span>
                         </a>
 
-                        <a href="#" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
-                            <span class="text-2xl"><i class="bx bx-heart"></i></span>
-                            <span>My Favourite</span>
+                        <a href="#" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-[#51C1F9]">
+                            <span class="text-2xl"></span>
+                            <span>Resources</span>
                         </a>
 
-                        <a href="#" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
-                            <span class="text-2xl"><i class="bx bx-user"></i></span>
-                            <span>Profile</span>
-                        </a>
+                        
                     </div>
                 </div>
             </div>

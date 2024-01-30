@@ -1,8 +1,7 @@
 import React from "react";
-import Slanted from '../assets/slanted.svg'
 const AboutMobile = () => {
     return (
-        <div className="mt-10">
+        <div className="mt-10" id="about-us">
             <div className="flex items-center p-4">
                 <hr class="w-12 h-0.5 bg-[#51C1F9] border-0 rounded mr-3" />
                 <p className="text-[#0E2954] dark:text-white text-2xl">About Us</p>

@@ -2,7 +2,7 @@ import React from "react";
 import Slanted from '../assets/slanted.svg'
 const About = () => {
     return (
-        <div>
+        <div id="about-us">
             <div className="flex items-center mx-24 p-4 mb-7">
                 <hr class="w-36 h-0.5 bg-[#51C1F9] border-0 rounded mr-3" />
                 <p className="text-2xl text-[#0E2954] dark:text-white">About Us</p>
