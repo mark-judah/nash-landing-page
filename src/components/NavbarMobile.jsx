@@ -11,7 +11,7 @@ const NavbarMobile = () => {
 
     const colorTheme = theme === 'dark' ? 'light' : 'dark';
 
-    
+
     useEffect(() => {
         const root = window.document.documentElement;
         root.classList.remove(colorTheme);
@@ -66,7 +66,12 @@ const NavbarMobile = () => {
                 </div>
 
                 <div className="flex">
-                    <div class={`${drawer ? "w-64 fixed top-20  z-40 h-fit p-4 overflow-y-auto transition-transform -translate-x-full bg-white  dark:bg-gray-800" : "hidden"} `}>
+
+                    <div class={`${drawer ? "w-64 fixed top-20  z-40 h-fit p-4 overflow-y-auto transition-transform -translate-x-full bg-white" : "hidden"} `}>
+                        <div className="flex justify-end items-end p-1.5">
+                            <p onClick={toggleDrawer}>X</p>
+                        </div>
+
                         <a href="#about-us" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-[#51C1F9]">
                             <span>About Us</span>
                         </a>
@@ -84,7 +89,7 @@ const NavbarMobile = () => {
                             <span>Resources</span>
                         </a>
 
-                        
+
                     </div>
                 </div>
             </div>

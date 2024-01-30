@@ -13,10 +13,10 @@ const FooterMobile = () => {
             <div className="flex justify-between items-center p-5">
                 <div>
                     <ul className="text-sm space-y-6">
-                    <a href="#"><li>Nash</li></a>
-                    <a href="#about-us"> <li>About Us</li></a>
-                    <a href="#services"> <li>Services</li></a>
-                    <a href="#contact-us"> <li>Contact Us</li></a>
+                        <li className="hover:text-[#59D6F1]"> <a href="#">Nash</a></li>
+                        <li className="hover:text-[#59D6F1]"> <a href="#about-us"> About Us</a></li>
+                        <li className="hover:text-[#59D6F1]"> <a href="#services"> Services</a></li>
+                        <li className="hover:text-[#59D6F1]"><a href="#contact-us"> Contact Us</a></li>
                     </ul>
                 </div>
 
@@ -58,7 +58,7 @@ const FooterMobile = () => {
                         </div>
 
                         <div className="hidden dark:block">
-                        <svg width="50" height="50" className="w-8" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="50" height="50" className="w-8" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M37.9271 4.6875H44.8187L29.7625 21.8958L47.475 45.3125H33.6042L22.7417 31.1104L10.3125 45.3125H3.41667L19.5208 26.9062L2.53125 4.6875H16.75L26.5687 17.6687L37.9229 4.6875H37.9271ZM35.5083 41.1875H39.3271L14.6771 8.59583H10.5792L35.5083 41.1875Z" fill="black" />
                             </svg>
                         </div>
