@@ -21,9 +21,15 @@ const settings = {
 const ServicesMobile = () => {
     const cards = [
         {
+            "image": Image4,
+            "title": "P2P transactions",
+            "caption": "Users can send funds to each other  in stablecoins.",
+            "footer": "Request Invoice..."
+        },
+        {
             "image": Image1,
-            "title": "On-ramp/off-ramp",
-            "caption": "We offer ramping services directly from bank accounts or M-Pesa.",
+            "title": "C2B transactions",
+            "caption": "Allows businesses to receive payments in cryptocurrencies.",
             "footer": "Request Invoice..."
         },
         {
@@ -38,12 +44,7 @@ const ServicesMobile = () => {
             "caption": "Save your money with us and earn passive income from our platform.",
             "footer": "Request Invoice..."
         },
-        {
-            "image": Image4,
-            "title": "P2P transactions",
-            "caption": "Users can send funds to each other in stablecoins.",
-            "footer": "Request Invoice..."
-        },
+       
     ]
     return (
         <div className="mt-10">

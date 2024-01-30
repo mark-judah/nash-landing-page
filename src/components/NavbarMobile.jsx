@@ -2,10 +2,13 @@ import React from "react";
 import Logo from '../assets/Logo.svg'
 import Sidebar from '../assets/sidebar.svg'
 import { useEffect, useState } from 'react';
+import 'flowbite-react';
 
 const NavbarMobile = () => {
     const [theme, setTheme] = useState(localStorage.theme);
     const [ischecked, setchecked] = useState(false)
+    const [drawer, setOpen] = useState(false)
+
     const colorTheme = theme === 'dark' ? 'light' : 'dark';
 
     useEffect(() => {
@@ -33,6 +36,13 @@ const NavbarMobile = () => {
         }
     };
 
+    const toggleDrawer = () => {
+        if (drawer) {
+            setOpen(false);
+        } else {
+            setOpen(true)
+        }
+    }
     return (
         <div className="flex justify-between p-4 items-center">
             <div className="flex items-center">
@@ -51,7 +61,36 @@ const NavbarMobile = () => {
                 </div>
 
                 <div>
-                    <img src={Sidebar} className="w-12 md:w-24"></img>
+                    <img src={Sidebar} onClick={toggleDrawer} className="w-12 md:w-24"></img>
+                </div>
+
+                <div className="flex">
+                    <div class={`${drawer ? "w-64 fixed top-20  z-40 h-fit p-4 overflow-y-auto transition-transform -translate-x-full bg-white  dark:bg-gray-800" : "hidden"} `}>
+                        <a href="#" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+                            <span class="text-2xl"><i class="bx bx-home"></i></span>
+                            <span>Dashboard</span>
+                        </a>
+
+                        <a href="#" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+                            <span class="text-2xl"><i class="bx bx-cart"></i></span>
+                            <span>Cart</span>
+                        </a>
+
+                        <a href="#" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+                            <span class="text-2xl"><i class="bx bx-shopping-bag"></i></span>
+                            <span>Shopping</span>
+                        </a>
+
+                        <a href="#" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+                            <span class="text-2xl"><i class="bx bx-heart"></i></span>
+                            <span>My Favourite</span>
+                        </a>
+
+                        <a href="#" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+                            <span class="text-2xl"><i class="bx bx-user"></i></span>
+                            <span>Profile</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import iPhone13 from '../assets/iPhone13.svg'
 import play from '../assets/play.svg'
-import { Sidebar } from 'flowbite-react';
 
 
 const IntroMobile = () => {
